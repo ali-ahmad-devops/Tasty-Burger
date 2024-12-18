@@ -1,0 +1,22 @@
+.footer_logo{
+    max-width: 150px;
+    width: 100%;
+}
+.footer_list{
+    list-style: none;
+    padding-left: 10px;
+}
+.footer_list li{
+    line-height: 30px;
+}
+.footer_list li:hover a{
+    color: var(--yellow) !important;
+}
+.footer_list li .bi{
+    font-size: 30px;
+}
+.footer_list li:hover .bi{
+    font-size: 35px;
+    transition: all 0.3ms ease-in-out;
+    color: var(--yellow);
+}

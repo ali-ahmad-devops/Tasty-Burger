@@ -1,0 +1,111 @@
+header .navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .navbar_sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    transition: all 15ms ease-in-out;
+    -webkit-transition: all 15ms ease-in-out;
+    -o-transition: all 15ms ease-in-out;
+    -ms-transition: all 15ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out;
+    animation: stickyTransition 0.5s both;
+    -webkit-animation: stickyTransition 0.5s both;
+    box-shadow: 0px 2px 3px rgba(96, 96, 96, 0.1);
+    -webkit-box-shadow: 0px 2px 3px rgba(96, 96, 96, 0.1);
+    -moz-box-shadow: 0px 2px 3px rgba(96, 96, 96, 0.1);
+    transform: translate3d(0, -100%, 0);
+}
+
+@keyframes stickyTransition {
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100% , 0);
+        transform: translate3d(0, -100% , 0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100% , 0);
+        transform: translate3d(0, -100% , 0);
+    }
+}
+
+
+header .logo img{
+    width: auto;
+    max-width: inherit;
+    height: 80px;
+}
+
+header .nav-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15.75px;
+    padding: 0 14px !important;
+    color: var(--white) !important;
+    font-family: var(--oswald-font);
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 15ms ease-in-out;
+}
+header .navbar_sticky .nav-link{
+     color: var(--light-black) !important;
+}
+header .nav-link:hover{
+    color: var(--yellow) !important;
+}
+
+header .cart{
+    position: relative;
+}
+header .roundpoint{
+    width: 16px;
+    height: 16px;
+    background-color: var(--light-red);
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    font-style: normal;
+    position: absolute ;
+    left: 10px;
+}
+
+@media (max-width:992px){
+    header .navbar{
+        background-color: var(--white);
+    }
+    header .navbar-toggler, header .navbar-toggler:focus{
+        border: none;
+        box-shadow: none;
+    }
+    header .navbar-toggler-icon{
+        width: 35px;
+        height: 35px;
+    }
+    header .nav-link{
+        color: var(--light-black);
+        padding: 14px !important;
+    }
+}
+
+
+@media (max-width:767px){
+    header .logo img{
+        height: 60px;
+    }
+}

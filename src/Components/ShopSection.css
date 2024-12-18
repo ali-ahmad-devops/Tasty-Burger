@@ -1,0 +1,53 @@
+.shop_section{
+    background-color: var(--yellow);
+}
+.shop_section h4{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--bg-coffee);
+}
+.shop_section h2{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--bg-coffee);
+}
+
+
+
+
+.brand_section{
+    background-color: var(--light-grey);
+    overflow: hidden;
+}
+
+.brand_section .brand_img{
+    width: 180px;
+    height: auto;
+}
+
+@media (max-width:767px){
+    .shop_section h4{
+        font-size: 24px;
+    }
+    .shop_section h2{
+        font-size: 48px;
+    }
+    .brand_section .brand_img{
+        width: 70px;
+    }
+}
+@media (max-width:577px){
+    .shop_section h4{
+        font-size: 20px;
+    }
+    .shop_section h2{
+        font-size: 40px;
+    }
+    .shop_section p{
+        font-size: 14px;
+    }
+    .brand_section .brand_img{
+        width: 50px;
+    }
+}

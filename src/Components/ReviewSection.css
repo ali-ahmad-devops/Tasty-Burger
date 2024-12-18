@@ -1,0 +1,23 @@
+.review_section{
+    background: url("../assets/blog/reviews.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+.review_section .user_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 99px;
+    overflow: hidden;
+}
+.review_section p{
+    font-size: 20px;
+    /* line-height: 30px; */
+    font-weight: 400;
+}
+.review_section h5{
+    font-size: 14px;
+}
+.review_section .item_rating{
+    color: var(--yellow);
+}

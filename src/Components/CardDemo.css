@@ -1,0 +1,50 @@
+
+.orderCards .item_rating i{
+    color: var(--yellow)
+}
+.orderCards .wishlist i{
+    color: var(--grey);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 15ms ease-in-out;
+}
+.orderCards .wishlist i:hover{
+    color: var(--light-red);
+    transition: all 15ms ease-in-out;
+}
+.orderCards .card-title{
+    font-family: var(--oswald-font);
+    font-weight: 600;
+}
+.orderCards .card-text{
+    color: var(--grey);
+    font-size: 15px;
+}
+.orderCards .menu_price{
+    background-color: var(--bg-coffee);
+    display: inline-block;
+    border-radius: 4px;
+}
+.orderCards .menu_price h5{
+    font-size: 14px;
+    color: var(--yellow);
+}
+.orderCards .add_to_cart a{
+    background-color: var(--yellow);
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 500ms ease-in-out;
+}
+
+.orderCards:hover .card-img-top{
+    transform: scale(1.1);
+}
+.orderCards:hover .add_to_cart a{
+    transform: translateY(0px);
+    opacity: 1;
+}
